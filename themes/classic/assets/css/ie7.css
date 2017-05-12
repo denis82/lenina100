@@ -1,0 +1,79 @@
+.main_menu ul * {
+	z-index:10;
+}
+.submenu {
+	top:37px;
+}
+.menu {
+	margin-top:70px;
+	margin-bottom:40px;
+}
+
+/*.menu .people {
+	margin:-140px -150px;
+}*/
+
+.submenu {
+	position:absolute;
+	z-index:6666;
+}
+
+.menu, .ie8 .menu{
+	width:95% !important;
+}
+.menu-list {
+    width: 95% !important;
+    text-align-last: justify !important;
+}
+.header .menu-list {
+    width: 98% !important;
+}
+.header .menu-list li .one-block{
+	margin-left:40px;
+}
+
+.menu-list {
+	zoom: 1;
+}
+            
+.menu-list li {
+	display: inline !important;
+    zoom: 1 !important;
+}
+.header .menu-list li {
+	width:220px !important;
+}
+
+.ie7 .menu-list li.helper {
+    display: none !important;
+}
+.ie7 .menu li a span {
+	display:block;
+	position: relative;
+	width:120px;
+	margin-top: inherit;
+	clear: expression(
+	style.marginTop = "" + (offsetHeight < parentNode.offsetHeight ? parseInt((parentNode.offsetHeight - offsetHeight) / 2) + "px" : "0"),
+	style.clear = "none", 0);
+}
+.menu-content{
+display:inline-block;
+margin:0 auto;
+text-align:center;
+}
+.menu-content *{
+	float:left;
+	position:relative;
+	display:inline-block;
+	clear: expression(
+	style.marginTop = "" + parseInt((72 - offsetHeight) / 2) + "px" : "0"),	style.clear = "none", 0);
+}
+.block-qa .all {
+	width:140px;
+	text-align:right;
+}
+.popup .bl-val {
+	line-height:22px;
+	min-height:22px;
+	padding:20px 0 0 16px;
+}
