@@ -10,15 +10,11 @@
 	height:19px;
 	line-height:19px;
 	list-style:none;
-	/*margin:14px auto auto 18.4%;*/
-	margin-right: 20px;
-	margin-top: 14px;
+	margin:14px auto auto 18.4%;
 	padding:0;
-
 }
 .main_menu .submenu {
 	display:none;
-	padding-right: 5px;
 }
 .main_menu li {
 	float:left;
@@ -76,7 +72,7 @@
 	margin:0!important;
 	position:absolute!important;
 	top:35px;
-	/*width:110%!important;*/
+	width:110%!important;
 	z-index: 14;
 	overflow:hidden;
 	-webkit-border-radius:7px;
@@ -176,8 +172,8 @@
 	color:#1a1a1a;
 	font-size:16px;
 	margin-top:19px;
-	/*margin-left:39px;*/
-	/*margin-right:20px;*/
+	margin-left:39px;
+	margin-right:20px;
 	width:100.5%;
 }
 	.header .adress .working {
@@ -213,20 +209,19 @@
 	font-size:14px;
 	margin-top:21px;
 	text-align:left;
-	/*margin-left:38px;*/
-	width:100%;
+	margin-left:38px;
+	width:82%;
 	position:relative;
 	display:inline-block;
 }
 .ie7 .header .phone {display:inline; zoom:1;}
 .people {
-	display: none;
-	/*right:0;*/
-	/*display:block;*/
-	/*position:absolute;*/
-	/*z-index:-1;*/
-	/*top: -142px;*/
-	/*left: 66px;*/
+	right:0;
+	display:block;
+	position:absolute;
+	z-index:-1;
+	top: -142px;
+	left: 66px;
 }
 	.header .phone .phone-top {
 		position:relative; margin-left:-9px;
@@ -1559,61 +1554,3 @@ div.take-go div.text span.out{
   width:20%;
   text-align:right;
 }
-
-/*update header 23/05/2017*/
-
-.main_menu {
-	width: 96%;
-	margin: 0 auto;
-}
-
-.header-search {
-	position: relative;
-	width: 232px;
-	float: right;
-	margin-top: 20px;
-	overflow: hidden;
-	border: 1px solid #004a8f;
-	transform: skewX(-15deg);
-	border-radius: 5px;
-	height: 30px;
-}
-
-.input-search-header {
-	box-sizing: border-box;
-	width: 252px;
-	position: absolute;
-	display: block;
-	padding: 5px 50px 5px 28px;
-	font-size: 13px;
-	line-height: 18px;
-	color: #444;
-	left: -15px;
-	right: -20px;
-	bottom: 0;
-	top: 0;
-	border: 0;
-	transform: skewX(15deg);
-}
-
-.icon-search {
-	position: relative;
-	display: inline-block;
-	vertical-align: middle;
-	height: 16px;
-	width: 16px;
-	background: url(../images/sprite-icons.png) -50px -4px no-repeat;
-}
-
-.label-header-search {
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	right: 12px;
-	top: 8px;
-	transform: translateY(-50%);
-	transform: skewX(15deg);
-}
-
-
-/*END update header 23/05/2017*/
