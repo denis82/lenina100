@@ -6,15 +6,18 @@
 
 /*- TOP MENU -*/
 .main_menu ul {
-    float:left;
+    float:right;
 	height:19px;
 	line-height:19px;
 	list-style:none;
-	margin:14px auto auto 18.4%;
+	/*margin:14px auto auto 18.4%;*/
+	margin-right: 20px;
+	margin-top: 14px;
 	padding:0;
 }
 .main_menu .submenu {
 	display:none;
+	padding-right: 5px;
 }
 .main_menu li {
 	float:left;
@@ -72,7 +75,7 @@
 	margin:0!important;
 	position:absolute!important;
 	top:35px;
-	width:110%!important;
+	/*width:110%!important;*/
 	z-index: 14;
 	overflow:hidden;
 	-webkit-border-radius:7px;

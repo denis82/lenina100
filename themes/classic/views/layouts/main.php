@@ -22,7 +22,8 @@
 					 ->registerCssFile($baseUrl . '/css/common.css')
 					 ->registerCssFile($baseUrl . '/css/layout.css')
 					 ->registerCssFile($baseUrl . '/css/slider.css')
-                     
+					 ->registerCssFile($baseUrl . '/css/styles-low-wision.css')
+
                      ->registerScriptFile($baseUrl . '/js/colorbox/jquery.colorbox.js')
 					 ->registerScriptFile($baseUrl . '/js/ui/jquery-ui-1.8.21.custom.min.js')
                      ->registerScriptFile('http://maps.api.2gis.ru/1.0')
@@ -33,6 +34,8 @@
 					 ->registerScriptFile($baseUrl . '/js/mobilyslider.js')
 					 ->registerScriptFile($baseUrl . '/js/jquery.tools.min.js')
                      ->registerScriptFile($baseUrl . '/js/cufon-yui.js')
+                     ->registerScriptFile($baseUrl . '/js/jquery.cookie.js')
+                     ->registerScriptFile($baseUrl . '/js/low_vision.js')
 					 ->registerScriptFile($baseUrl . '/js/main.js')
                       ->registerScriptFile('https://www.google.com/recaptcha/api.js')
                      /* ->registerScriptFile($baseUrl . '/js/capcha.js')*/
@@ -47,7 +50,42 @@
 </head>
 <body class="front">
 
+<div id="CecutientWrapper">
+
+  <div id="CecutientBlock">
+        <span>
+          Изображения:
+          <a id="ImageOn" class="button">Выкл</a>
+          <a id="ImageOff" class="button">Вкл</a>
+        </span>
+    <span>
+          Шрифт:
+          <a id="SmallFonts" class="button">A</a>
+          <a id="MediumFonts" class="button">A</a>
+          <a id="BigFonts" class="button">A</a>
+        </span>
+    <span>
+          Цвет:
+          <a id="WhiteStyle" class="button">A</a>
+          <a id="BlackStyle" class="button">A</a>
+          <a id="BlueStyle" class="button">A</a>
+          <a id="GreenStyle" class="button">A</a>
+        </span>
+
+    <a id="CecutientOff" style="display: inline-block;"><span class="img"></span>Обычная версия</a>
+  </div>
+
+</div>
+
 <div class="wrapper">
+  <div class="CecutientBtn__wrap">
+    <a href="" class="CecutientBtn" id="CecutientOn" title="Версия для слабовидящих" alt="Версия для слабовидящих">
+      <span class="img"></span>Версия для слабовидящих
+    </a>
+  </div>
+
+<!--  END CecutientBtn__wrap-->
+
 	<!-- MENU TOP -->
 	<div class="main_menu cf">
 		<?php $this->widget('pages.components.Menu', array('view'=>'mainMenu', 'level'=>'2')); ?>
