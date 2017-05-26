@@ -91,6 +91,7 @@
 		    </label>
 		</div>
 	</div>
+	<?php //$this->widget('SiteSearch'); ?>
 	<!-- end MENU TOP -->
     <div class="header cf">
 		<ul class="menu-list">

@@ -37,6 +37,7 @@ return array (
       6 => 'filemanager.admin',
       7 => 'configs.admin',
       8 => 'info.admin',
+      9 => 'reviews.admin',
     ),
   ),
   'root' => 

@@ -45,6 +45,10 @@ return array(
         /* FAQ */
         '/faq' => 'faq/default/index',
         '/faq/<category_url:\w+>' => 'faq/default/index',
+        
+        /* REVIEWS */
+        '/reviews' => 'reviews/default/index',
+        '/reviews/<category_url:\w+>' => 'reviews/default/index',
 
         /* EXPERT */
         '/experts' => 'expert/default/index',

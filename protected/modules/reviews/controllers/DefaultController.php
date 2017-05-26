@@ -18,29 +18,29 @@ class DefaultController extends Controller
     public function actionIndex($category_url=false)
     {
         $this->pageTitle = $this->clips['title'] = $this->clips['keywords']
-             = $this->clips['description'] = 'Новые вопросы и ответы';
+             = $this->clips['description'] = 'Отзывы';
   
-        if($category_url){
-             $category = is_numeric($category_url) 
-                ? FaqCategory::model()->findByPk($category_url)
-                : FaqCategory::model()->findByAttributes(array('url'=>$category_url));
-             if(!$category)
-                throw new CHttpException(404);
-                
-             $this->pageTitle .=' ' .$category->title;
-             $this->clips['title'] .=' ' .$category->title;
-             $this->clips['keywords'] .=' ' .$category->title;
-             $this->clips['description'] .=' ' .$category->title;
-        }
+//         if($category_url){
+//              $category = is_numeric($category_url) 
+//                 ? FaqCategory::model()->findByPk($category_url)
+//                 : FaqCategory::model()->findByAttributes(array('url'=>$category_url));
+//              if(!$category)
+//                 throw new CHttpException(404);
+//                 
+//              $this->pageTitle .=' ' .$category->title;
+//              $this->clips['title'] .=' ' .$category->title;
+//              $this->clips['keywords'] .=' ' .$category->title;
+//              $this->clips['description'] .=' ' .$category->title;
+//         }
 		
-		$this->clips['content_title'] = $category->title . ': вопросы и ответы';
-		if (!$category->url) $this->clips['content_title'] = 'Все вопросы и ответы';
+// 		$this->clips['content_title'] = $category->title . ': вопросы и ответы';
+		$this->clips['content_title'] = 'Отзывы';
          
-        $condition = isset($category) ? 'category_id = '.$category->id : 'category_id > 0';
-		$items = Faq::model()->findAll(
+//         $condition = isset($category) ? 'category_id = '.$category->id : 'category_id > 0';
+		$items = Reviews::model()->findAll(
             array(
-				'condition' => 'status=:status AND visible=:visible AND '.$condition,
-				'params'=>array(':status'=>Faq::STATUS_ANSWERED, ':visible'=>Faq::STATE_VISIBLE),
+ 				'condition' => ' visible=:visible',
+ 				'params'=>array( ':visible'=>Reviews::STATE_VISIBLE),
 				'order'=>'weight ASC, create_time DESC',
             )
         );
@@ -71,16 +71,16 @@ class DefaultController extends Controller
             $this->layout = false;
         }
 
-        $model = new Faq('user_question');
+        $model = new Reviews('user_question');
 
-        if (isset($_POST['Faq'])) {
-            $model->attributes = $_POST['Faq'];
-            $model->status = Faq::STATUS_PENDING;
-            $model->visible = Faq::STATE_HIDDEN;
+        if (isset($_POST['reviews'])) {
+            $model->attributes = $_POST['reviews'];
+            $model->status = Reviews::STATUS_PENDING;
+            $model->visible = Reviews::STATE_HIDDEN;
             $model->category_id = 0;
 
             if ($model->save()) {
-                Yii::app()->user->setFlash('success', 'Вопрос успешно задан.');
+                Yii::app()->user->setFlash('success', 'Отзыв успешно записан.');
                 if (!Yii::app()->request->isAjaxRequest) {
                     $this->refresh();
                 }
@@ -88,8 +88,8 @@ class DefaultController extends Controller
         }
 
         $this->breadcrumbs = array(
-            'Вопрос-ответ' => array('index'),
-            'Задать вопрос',
+            'Отзывы' => array('index'),
+            'Оставить отзыв',
         );
 
         $this->render('ask', array(

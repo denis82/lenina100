@@ -54,6 +54,7 @@ class EAdminMenuWidget extends CWidget
         foreach (Yii::app()->getModules() as $m => $item) {
             $module = Yii::app()->getModule($m);
             if ($module && isset($module->label)) {
+            
                 $url = array("/$m/admin/index");
                 $items[] = array(
                     'label' => $module->label,
@@ -63,6 +64,9 @@ class EAdminMenuWidget extends CWidget
                 );
             }
         }
+       
+	
+	
         return $items;
     }
 

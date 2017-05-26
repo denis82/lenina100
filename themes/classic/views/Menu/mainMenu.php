@@ -1,4 +1,4 @@
-<?php 
+<?php         
 if(!empty($tree)):
 	// комментарий
     $ulClass = !isset($level) ? '' : ($level == 2 ? 'submenu' : '');
@@ -7,6 +7,7 @@ if(!empty($tree)):
         $parent->childs = array();
         array_unshift($tree, $parent);
     }
+    
     foreach($tree as $node) {
         $url = $node->url ? $node->url : $node->param;
         $activeClass = $this->isActive($url) ? 'active' : '';
