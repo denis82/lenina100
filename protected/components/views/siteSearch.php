@@ -1,14 +1,15 @@
-<div id="search"> 
- <div id="search_div">
-    	<h3>Поиск по сайту</h3>
-    	<?php $url = $this->getController()->createUrl('material/search'); ?>
+<!--<div id="search">--> 
+ <!--<div id="search_div">-->
+    <div class="header-search">
+    	<?php $url = $this->getController()->createUrl('/info/search'); ?>
 		<?php echo CHtml::beginForm($url); ?>
 		<div class="row">
-		<?php echo CHtml::activeTextField($form,'string') ?>
+		 <!--<input type="text" class="input-search-header" id="header-search" name="header-search" placeholder="Поиск">-->
+		<?php echo CHtml::activeTextField($form,'string' , array('class'=>"input-search-header", 'id'=>"header-search", 'placeholder'=>"Поиск")) ?>
 		<?php echo CHtml::error($form,'string'); ?>
-		<?php echo CHtml::SubmitButton('Поиск'); ?>
+		<?php echo CHtml::SubmitButton('Поиск',array('class'=>'header-search__submit')); ?>
 		</div>
 		<?php echo CHtml::endForm(); ?>
-    </div>
+    <!--</div>-->
     <div id="SearchFooter"></div>
 </div>

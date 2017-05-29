@@ -1585,6 +1585,10 @@ div.take-go div.text span.out{
 	margin: 0 auto;
 }
 
+.header-search:hover {
+	border: 1px solid #9d0621;
+}
+
 .header-search {
 	position: relative;
 	width: 232px;
@@ -1595,6 +1599,10 @@ div.take-go div.text span.out{
 	transform: skewX(-15deg);
 	border-radius: 5px;
 	height: 30px;
+}
+
+.input-search-header:focus {
+	outline:none;
 }
 
 .input-search-header {
@@ -1623,65 +1631,56 @@ div.take-go div.text span.out{
 	background: url(../images/sprite-icons.png) -50px -4px no-repeat;
 }
 
-.label-header-search {
+.header-search__submit {
+	border: 0;
+	padding: 0;
+	font-size:0;
 	position: absolute;
-	width: 20px;
-	height: 20px;
+	height: 16px;
+	width: 16px;
+	background: url(../images/sprite-icons.png) -50px -4px no-repeat;
 	right: 12px;
 	top: 8px;
 	transform: translateY(-50%);
 	transform: skewX(15deg);
 }
 
+.header-search:hover .header-search__submit {
+	background-position: -108px -4px;
+}
+
+.header-search__submit:hover,
+.header-search__submit:focus {
+	outline: none;
+	background-position: -108px -4px;
+}
+
+
+/*.header-search:hover .icon-search {*/
+/*background-position: -108px -4px;*/
+/*}*/
+
+
+/*.icon-search {*/
+/*position: relative;*/
+/*display: inline-block;*/
+/*vertical-align: middle;*/
+/*height: 16px;*/
+/*width: 16px;*/
+/*background: url(../images/sprite-icons.png) -50px -4px no-repeat;*/
+/*}*/
+
+/*.label-header-search {*/
+/*position: absolute;*/
+/*width: 20px;*/
+/*height: 20px;*/
+/*right: 12px;*/
+/*top: 8px;*/
+/*transform: translateY(-50%);*/
+/*transform: skewX(15deg);*/
+/*}*/
+
 .g-recaptcha {
 	margin-top: 20px;
-}
-
-.reviews__inner {
-	position: relative;
-}
-
-.reviews__inner input{
-	position: absolute;
-	visibility: hidden;
-	opacity: 0;
-	width: 1px;
-	height: 1px;
-	top: 0;
-	left: 0;
-}
-
-.reviews__inner label {
-	color: #1a1a1a;
-	font-family: Arial;
-	font-size: 12px;
-	font-style: italic;
-	-moz-user-select: none; /* Mozilla Firefox */
-	-ms-user-select: none; /* Internet Explorer (не поддерживается) */
-	-o-user-select: none; /* Opera Presto (не поддерживается) */
-	-webkit-user-select: none; /* Google Chrome, Opera Next, Safari */
-}
-
-.reviews__inner label::before {
-	content: '';
-	margin-right: 10px;
-	display: inline-block;
-	vertical-align: middle;
-	width: 12px;
-	height: 12px;
-	border: 1px solid #ababab;
-}
-
-.reviews__inner input:checked + label::after {
-	position: absolute;
-	top: 50%;
-	left: 3px;
-	transform: translateY(-50%);
-	content: '';
-	width: 8px;
-	height: 6px;
-	background: url(../images/sprite-icons.png) no-repeat -96px 0;
-
-
 }
 /*END update header 23/05/2017*/

@@ -40,6 +40,7 @@ return array(
 		/* INFO */
         '/info' => 'info/default/index',
         '/info/<id:\d+>' => 'info/default/view',
+        '/info/<_a>' => 'info/default/<_a>',
         '/info/<_c>/<_a>/*' => 'info/<_c>/<_a>',
 
         /* FAQ */

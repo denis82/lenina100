@@ -84,20 +84,19 @@
 	<!-- MENU TOP -->
 	<div class="main_menu cf">
 		<?php $this->widget('pages.components.Menu', array('view'=>'mainMenu', 'level'=>'2')); ?>
-		<div class="header-search">
+		<!--<div class="header-search">
 		    <input type="text" class="input-search-header" id="header-search" name="header-search" placeholder="Поиск">
 			<label for="header-search" class="label-header-search">
 			<i class="icon-search"></i>
 		    </label>
-		</div>
+		</div>--><?php $this->widget('SiteSearch'); ?>
 	</div>
-	<?php //$this->widget('SiteSearch'); ?>
+	
 	<!-- end MENU TOP -->
     <div class="header cf">
 		<ul class="menu-list">
 		<li>
 			<?php if ($_SERVER['REQUEST_URI'] != '/') echo "<a href = '/'>"; ?>
-			<div class="slogan pfdintextcondpro">Здоровая семья<br><span>начинается с тебя!</span></div>
 			<div class="logo">БУЗ УР «Республиканский кожно-венерологический диспансер МЗ УР» г. Ижевск</div>
 			<?php if ($_SERVER['REQUEST_URI'] != '/') echo "</a>"; ?>
 		</li>

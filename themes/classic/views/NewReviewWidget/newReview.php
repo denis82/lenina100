@@ -14,12 +14,12 @@
                 <?php echo CHtml::activeTextArea($model, 'reviews', array('title'=>'Отзыв',)); ?>
             </label>
             
-            <div class="reviews__inner">
-		    <?php echo CHtml::activeCheckBox($model, 'agree') ?>
+            <!--<div class="reviews__inner">-->
+		    <?php // echo CHtml::activeCheckBox($model, 'agree') ?>
 		
-		    <?php echo CHtml::activeLabelEx($model, 'agree'); ?>
+		    <?php // echo CHtml::activeLabelEx($model, 'agree'); ?>
 		
-            </div>
+            <!--</div>-->
             <div class="g-recaptcha" data-sitekey="6LfA_yIUAAAAAMJuY_--QUCyH8qsGg6IDio_swcI"></div>
             <div class="row">
                 
