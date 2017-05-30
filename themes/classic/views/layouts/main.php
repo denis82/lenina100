@@ -49,6 +49,7 @@
     ?>
 </head>
 <body class="front">
+<<<<<<< HEAD
 
 <div id="CecutientWrapper">
 
@@ -84,18 +85,56 @@
     </a>
   </div>
 
+=======
+<div class="wrapper">
+<div id="CecutientWrapper">
+
+  <div id="CecutientBlock">
+        <span>
+          Изображения:
+          <a id="ImageOn" class="button">Выкл</a>
+          <a id="ImageOff" class="button">Вкл</a>
+        </span>
+    <span>
+          Шрифт:
+          <a id="SmallFonts" class="button">A</a>
+          <a id="MediumFonts" class="button">A</a>
+          <a id="BigFonts" class="button">A</a>
+        </span>
+    <span>
+          Цвет:
+          <a id="WhiteStyle" class="button">A</a>
+          <a id="BlackStyle" class="button">A</a>
+          <a id="BlueStyle" class="button">A</a>
+          <a id="GreenStyle" class="button">A</a>
+        </span>
+
+    <a id="CecutientOff1"><span class="img"></span>Обычная версия</a>
+  </div>
+
+</div>
+
+ 
+
+>>>>>>> Yii44165.blind_version
 <!--  END CecutientBtn__wrap-->
 
 	<!-- MENU TOP -->
 	<div class="main_menu cf">
 		<?php $this->widget('pages.components.Menu', array('view'=>'mainMenu', 'level'=>'2')); ?>
+		<!--<div class="header-search">
+		    <input type="text" class="input-search-header" id="header-search" name="header-search" placeholder="Поиск">
+			<label for="header-search" class="label-header-search">
+			<i class="icon-search"></i>
+		    </label>
+		</div>--><?php $this->widget('SiteSearch'); ?>
 	</div>
+	
 	<!-- end MENU TOP -->
     <div class="header cf">
 		<ul class="menu-list">
 		<li>
 			<?php if ($_SERVER['REQUEST_URI'] != '/') echo "<a href = '/'>"; ?>
-			<div class="slogan pfdintextcondpro">Здоровая семья<br><span>начинается с тебя!</span></div>
 			<div class="logo">БУЗ УР «Республиканский кожно-венерологический диспансер МЗ УР» г. Ижевск</div>
 			<?php if ($_SERVER['REQUEST_URI'] != '/') echo "</a>"; ?>
 		</li>
@@ -124,6 +163,19 @@
 			<!--  end PHONE -->
 			</div>
 		</li>
+		
+		<li class="CecutientBtn__wrap">
+			<a href="http://lenina100.picom.su/" class="CecutientBtn" id="CecutientOn" title="Версия для слабовидящих" alt="Версия для слабовидящих">
+			    <span class="img"></span>Версия для слабовидящих
+			</a>
+
+
+			<a href="http://lenina100.picom.su/" class="CecutientBtn" id="CecutientOff" title="Версия для слабовидящих" alt="Версия для слабовидящих">
+			    <span class="img"></span>Обычная версия
+			</a>
+
+		</li>
+		
 		<li class="last">
 			<div class="one-block buttons">
 				<a href="/write" class="faq button cboxForm red front"><center>Запишитесь <br /> на приём</center></a>

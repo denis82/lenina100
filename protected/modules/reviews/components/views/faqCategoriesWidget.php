@@ -1,9 +1,7 @@
 <ul class="no_marker">
-<?php var_dump($item);die();?>
 <?php foreach ($items as $item): ?>
         <?php
                 $options = array();
-                
                 if(strpos (Yii::app()->request->pathInfo, $item['url']) !== false)
                     $options['class'] = 'active';
         ?>

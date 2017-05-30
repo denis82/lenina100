@@ -280,7 +280,11 @@ $(document).ready(function () {
 
 
   /*Отключение версии для слабовидящих*/
+<<<<<<< HEAD
   $('#CecutientOff').click(function () {
+=======
+  $('#CecutientOff,#CecutientOff1').click(function () {
+>>>>>>> Yii44165.blind_version
     $.cookie('CecutientCookie', null, {path: '/'});
     //$.cookie("CecutientCookie", "off");
     // $.removeCookie('CecutientCookie');

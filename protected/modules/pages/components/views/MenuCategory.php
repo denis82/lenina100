@@ -30,9 +30,9 @@
 			$options['id'] = $j;
 			
 			echo CHtml::openTag('li', $options);  
-			if ($j == 3) {
-				echo '<img src="/themes/classic/assets/images/people.png" class="people">';
-			}
+// 			if ($j == 3) {
+// 				echo '<img src="/themes/classic/assets/images/people.png" class="people1">';
+// 			}
 			
 			echo CHtml::link($current['image_menu'].'<span>'.$current['label'].'</span>', $url,
 								array('title' => $current['label'],

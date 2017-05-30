@@ -8,6 +8,7 @@
 
 #CecutientWrapper a {
 	background-image: none;
+<<<<<<< HEAD
 overflow: visible;
 }
 
@@ -15,6 +16,22 @@ overflow: visible;
 	position: relative;
 	top: 13px;
 	margin-left: 20px;
+=======
+	overflow: visible;
+
+}
+
+.CecutientBtn__wrap {
+	width: 184px;
+	height: 62px;
+	line-height: 62px;
+	margin-top:21px;
+	border: 1px solid #004a8f;
+	transform: skewX(-9deg);
+	border-radius: 10px;
+	text-align: left;
+	overflow: hidden;
+>>>>>>> Yii44165.blind_version
 }
 
 #CecutientOn {
@@ -1034,12 +1051,18 @@ table {
 	z-index: 5;
 }
 
+<<<<<<< HEAD
 #CecutientOff {
+=======
+#CecutientOff,
+#CecutientOff1 {
+>>>>>>> Yii44165.blind_version
 	cursor: pointer;
 	color: inherit;
 	font-size: 100%;
 }
 
+<<<<<<< HEAD
 #CecutientOff .img {
 	width: 15px;
 	height: 10px;
@@ -1075,6 +1098,66 @@ a.CecutientBtn {
 .CecutientBtn .img {
 	width: 15px;
 	height: 10px;
+=======
+/*#CecutientOff .img {*/
+	/*width: 15px;*/
+	/*height: 10px;*/
+	/*margin: -1px 5px 0 5px;*/
+	/*position: relative;*/
+	/*vertical-align: middle;*/
+	/*display: inline-block;*/
+	/*background: url(../images/sprite-icons.png)no-repeat -71px -4px;*/
+/*}*/
+
+.blackstyle #CecutientOff .img,
+.blackstyle #CecutientOff1 .img{
+	background: url(../images/low-vision/eye_white.png);
+}
+
+.whitestyle #CecutientOff .img,
+.whitestyle #CecutientOff1 .img{
+	background: url(../images/low-vision/eye_black.png);
+}
+
+.greenstyle #CecutientOff .img,
+.greenstyle #CecutientOff1 .img{
+	background: url(../images/low-vision/eye_green.png);
+}
+
+.bluestyle #CecutientOff1 .img{
+	background: url(../images/low-vision/eye.png);
+}
+
+.bluestyle #CecutientOff1 {
+	color: #004a8f;
+}
+
+a.CecutientBtn {
+	padding-left: 47px;
+	margin-top: 10px;
+	color: #004a8f;
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+	z-index: 1000;
+	font-size: 16px;
+	line-height: 21px;
+	transform: skewX(9deg);
+	text-align: left;
+	text-decoration: none;
+}
+
+.low-vision .CecutientBtn__wrap #CecutientOff {
+	margin-top: 0;
+	display: block;
+	line-height: 63px;
+	color: #004a8f;
+}
+
+#CecutientOff1 .img {
+	width: 22px;
+	height: 15px;
+>>>>>>> Yii44165.blind_version
 	margin: -1px 5px 0 0;
 	position: relative;
 	vertical-align: middle;
@@ -1082,6 +1165,24 @@ a.CecutientBtn {
 	background: url(../images/low-vision/eye_black.png);
 }
 
+<<<<<<< HEAD
+=======
+.low-vision .CecutientBtn .img {
+	top: 24px;
+}
+
+
+.CecutientBtn .img {
+	position: absolute;
+	left: 12px;
+	top: 15px;
+	width: 22px;
+	height: 15px;
+	display: block;
+	background: url(../images/sprite-icons.png)no-repeat -71px -4px;
+}
+
+>>>>>>> Yii44165.blind_version
 #ImageOn, #ImageOff {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -1296,6 +1397,22 @@ div.take-go div.title {
 	background-image: none!important;
 }
 
+<<<<<<< HEAD
+=======
+.whitestyle .CecutientBtn__wrap {
+	border: 1px solid #000!important;
+}
+
+.whitestyle .header-search {
+	border: 1px solid #000;
+}
+
+.whitestyle .input-search-header {
+	background: #fff;
+	color: #000;
+}
+
+>>>>>>> Yii44165.blind_version
 	/*END WhiteStyle*/
 
 .blackstyle .menu-list {
@@ -1423,6 +1540,23 @@ div.take-go div.title {
 	background-image: none!important;
 }
 
+<<<<<<< HEAD
+=======
+.blackstyle .CecutientBtn__wrap {
+	border: 1px solid #fff!important;
+}
+
+.blackstyle .header-search {
+	border: 1px solid #fff;
+}
+
+.blackstyle .input-search-header {
+	background: #000;
+	color: #fff;
+}
+
+
+>>>>>>> Yii44165.blind_version
 
 /*END .blackstyle */
 
@@ -1675,7 +1809,10 @@ div.take-go div.title {
 	border-top: 2px solid #3B2716;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> Yii44165.blind_version
 .greenstyle .button.cboxForm:hover,
 .greenstyle .one-block.buttons a.button:hover,
 .greenstyle .side-form button:hover {
@@ -1695,7 +1832,17 @@ div.take-go div.title {
 	font-weight: bold!important;
 	background-image: none!important;
 }
+<<<<<<< HEAD
 /*END greenstyle*/
+=======
+
+.greenstyle .CecutientBtn__wrap {
+	border: 1px solid #A9E44D!important;
+}
+
+
+	/*END greenstyle*/
+>>>>>>> Yii44165.blind_version
 
 
 .low-vision .wrapper {
@@ -1709,9 +1856,15 @@ div.take-go div.title {
 }
 
 
+<<<<<<< HEAD
 .low-vision .main_menu ul {
 	margin:14px auto auto 18.4%;
 }
+=======
+/*.low-vision .main_menu ul {*/
+	/*margin:14px auto auto 18.4%;*/
+/*}*/
+>>>>>>> Yii44165.blind_version
 
 
 

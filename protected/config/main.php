@@ -39,11 +39,12 @@ return array(
         'news',
         'faq',
         'expert',
-				'banner',
+	'banner',
         'users',
         'filemanager',
         'configs',
-		'info',
+	'info',
+	'reviews',
     ),
     
     //gzip
